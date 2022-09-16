@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Fazendo um Bolo</title>
+</head>
+<body>
+    <div class="container-fluid md-3 bg-dark text-white p-2">
+        <h1>Fazendo um Bolo</h1>
+        <p>HTML, JavaScript, CSS e PHP</p>
+    </div>
+    <div id="dCozinha" class="row p-2">
+        <h2>Cozinha</h2>
+        <div class="col"> <!--Ingredientes-->
+            <h2>Ingredientes</h2>
+            <img id="iIngrediente" class="imagem ingrediente" src="img/ingrediente.webp">
+            <img id="iForma" class="imagem forma" src="img/forma3.jpg">
+            <img id="iMassa" class="imagem massa" src="img/massa.jpg">
+            <img id="iBoloAssado" class="imagem bolo" src="img/bolo-assado.jpg">
+            
+        </div>
+        <div class="col"><!--Preparo-->
+            <h2>Preparo</h2>
+            <button id="bIngrediente" onclick="fIngrediente()">Ingrediente</button>
+            <button id="bBater" onclick="fBater()">Bater</button>
+            <button id="bAssar" onclick="fAssar()">Assar</button>
+            <button id="bCobertura" onclick="fCobertura()">Cobertura</button>
+            <button id="bApresentar" onclick="fApresentar()">Apresentar</button>        
+            <div class="row">
+                <img id="iBatedeira" class="batedeira" src="img/batedeira.png">
+                <img id="iForno" class="forno" src="img/forno.jpg">
+            </div>
+            <div id="dFornecedor" class="row"></div>
+        </div>
+    </div>
+    <div id="dBolo" class="row p-2">
+        <h2>Bolo</h2>
+        <img id="iBoloPronto" class="bolo-pronto" src="img/bolo-pronto.png">
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="acoes.js"></script>
+</html>
