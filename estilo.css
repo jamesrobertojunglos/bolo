@@ -1,0 +1,39 @@
+.imagem {
+    width: 180px;
+    height: auto;
+    position: relative;
+}
+
+div#dBolo {
+    display: none;
+}
+
+.batedeira, .forno, .massa, .bolo{
+    width: 180px;
+    height: auto;
+    display: none;
+}
+
+.bolo-pronto {
+    width: 300px;
+    height: auto;
+    display:block;
+}
+
+.forma {
+    position: relative;
+    z-index: 1;
+}
+
+.ingrediente{
+    position: relative;
+    z-index: 1;
+}
+
+.ingrediente-add {
+    position: absolute;
+    top:240px;
+    left: 50px;;
+    z-index: 2;
+    width: 90px;
+}
